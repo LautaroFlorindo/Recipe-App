@@ -1,0 +1,225 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;500&family=Nunito+Sans:wght@200;500;600&family=PT+Serif:wght@400;700&display=swap');
+
+body {
+    margin: 1rem;
+    font-family: 'Montserrat', sans-serif;
+    min-height: 1000px;
+}
+
+#search-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+}
+
+#search-bar {
+    margin: 0;
+    padding: 0;
+    border: none;
+    background-color: gainsboro;
+    height: 1.5rem;
+    border-radius: 3%;
+}
+
+#search-bar:focus {
+    outline: 1px solid darkgreen;
+}
+
+#search-button {
+    border: none;
+    background-color: transparent;
+}
+
+.search-icon {
+    padding: 0 0 0.7rem 1rem;
+    color: darkgreen;
+}
+
+
+#fav-meals-container {
+    overflow-x: scroll;
+    background-color: rgba(39, 255, 39, 0.076);
+    height: 150px;
+}
+
+#fav-meals-title{
+    background-color: rgba(39, 255, 39, 0.076);
+    font-size: 1rem;
+    text-align: center;
+    padding: 10px;
+    margin-bottom: 0;
+}
+
+#fav-meals {
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    height: 8rem;
+    width: 100%;
+    box-sizing: border-box;
+    padding-left: 1rem;
+}
+
+.fav-meals-box {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+.fav-meals-img {
+    min-width: 60px;
+    width: 60px;
+    max-width: 100%;
+    border-radius: 50%;
+    box-shadow: 0 0 5px darkgreen;
+}
+
+.fav-meals-text {
+    font-size: 0.8rem;
+    font-weight: 300;
+    text-align: center;
+    width: 90px;
+    margin-top: 5px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+}
+
+#fav-meals-x{
+    background-color: transparent;
+    border: none;
+}
+
+#fav-meals-x i{
+    color: darkgreen;
+    font-size: 1.2rem;
+    position: absolute;
+    top: 0;
+    right: 1rem;
+    cursor: pointer;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+#random-meal-container {
+    position: relative;
+    margin-top: 1.5rem;
+    width: 90%;
+    max-width: 699.3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#random-meal-img-title {
+    height: 100%;
+}
+
+.random-meal-et {
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: darkgreen;
+    color: white;
+    width: 12rem;
+    text-align: center;
+    font-weight: 300;
+}
+
+.random-meal-title-container {
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    color: white;
+    overflow: hidden;
+    background-color: darkgreen;
+}
+
+#random-meal-title {
+    position: relative;
+    margin: 5px 10px;
+    z-index: 1;
+    font-weight: 500;
+    text-align: start;
+}
+
+#random-meal-like {
+    position: relative;
+    color: white;
+    cursor: pointer;
+    display: flex;
+    margin-top: 1.1rem;
+    margin-right: 10px;
+    padding-bottom: 20px;
+    transition: scale 0.2s ease;
+}
+
+#random-meal-like:active{
+    color: red;
+    transform: scale(110%);
+}
+
+#random-meal-img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+#random-meal-reload{
+    margin-top: 10px;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    border-radius: 50%;
+    background-color: darkgreen;
+    color: white;
+    font-size: 1rem;
+}
+
+.loader {
+    width: 48px;
+    height: 48px;
+    border: 5px solid darkgreen;
+    border-bottom-color: transparent;
+    border-radius: 50%;
+    display: inline-block;
+    box-sizing: border-box;
+    animation: rotation 1s linear infinite;
+}
+
+@keyframes rotation {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.min-heigth-width{
+    min-height: 400px !important;
+    min-width: 350px;
+}
+
+.active{
+    color: red !important;
+}
